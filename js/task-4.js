@@ -6,12 +6,10 @@
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-const getTotalBalanceByGender = (users, gender) => {
-  const totalScore = users
+const getTotalBalanceByGender = (users, gender) =>
+  users
     .filter(user => user.gender === gender)
     .reduce((acc, user) => acc + user.balance, 0);
-  return totalScore;
-};
 
 const clients = [
   {
